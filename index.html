@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- HEAD START -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- LINKS -->
+        <link href="css/main.css" rel="stylesheet">
+
+        <title>HTML Form Assignement</title>
+    </head>
+    <!-- HEAD END -->
+
+    <body>
+        <!-- FORM START -->
+        <div class="container">
+            <form method="POST" action="index.html" id="form">
+                <fieldset>
+                    <legend>Form Assignement</legend>
+                    <div class="grid">
+                        <div class="name">
+                            <label for="fullname">Full Name</label><br>
+                            <input type="text" name="fullname" id="fullname" value=""><br>
+                        </div>
+
+                        <div class="email">
+                            <label for="email">Email</label><br>
+                            <input type="text" name="email" id="email" value=""><br>
+                        </div>
+                    </div>
+
+                    <label for="message">Message</label><br>
+                    <textarea type="text" name="message" id="message" value=""></textarea><br>
+
+                    <input type="button" name="send" id="submit-button" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        <!-- FORM END -->
+
+        <!-- JAVASCRIPT LINK -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

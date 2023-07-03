@@ -1,0 +1,93 @@
+/* FONTS
+font-family: 'Arial', sans-serif; */
+
+/* COLORS
+#DDD
+#F5F5F5
+#6495ED */
+
+html {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    max-width: 50rem;
+    margin: auto;
+}
+
+/* FORM STYLE */
+fieldset {
+    border: 1.5px solid #DDD;
+    border-radius: 3px;
+    background-color: #F5F5F5;
+    padding: 2.5rem 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+legend {
+    border: 1.5px solid #ccc;
+    background-color: #ffffff;
+    padding: 1.5rem 1.5rem;
+    font-size: 2rem;
+}
+
+input[type=text], textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #DDD;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    resize: vertical;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+input[type=button] {
+    width: 100%;
+    background-color: #6495ED;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+input[type=button]:hover {
+    background-color: #6495ED;
+    color: black;
+}
+
+/* Media Query for 400px & larger */
+@media screen and (min-width: 25rem) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1.5rem;
+    } 
+
+    .name {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .email {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    input[type=button] {
+        width: auto;
+    }
+
+}
